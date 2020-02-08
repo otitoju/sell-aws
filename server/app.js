@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 //}
 //mongodb://localhost:27017/GraphQLDB
 //mongodb://sellyourmarket:sellyourmarket1@ds263928.mlab.com:63928/sellyourmarket
-mongoose.connect('mongodb://localhost:27017/GraphQLDB', { useNewUrlParser: true,  useUnifiedTopology: true })
+mongoose.connect('mongodb://sellyourmarket:sellyourmarket1@ds263928.mlab.com:63928/sellyourmarket', { useNewUrlParser: true,  useUnifiedTopology: true })
 mongoose.connection.once('open', () => {
     console.log('Database connected')
     app.listen(port, () => {
