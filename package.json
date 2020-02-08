@@ -8,10 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node server/app.js",
-    "dev": "concurrently --kill-others-on-fail \"npm server\" \"npm client\"",
-    "dev:server": "cd client && npm build && cd .. && npm start",
-    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "start": "node server/app.js"
   },
   "author": "",
   "license": "ISC",
