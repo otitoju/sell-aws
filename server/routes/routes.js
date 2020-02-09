@@ -15,7 +15,7 @@ router.post('/api/category', productcontroller.postProductsByCategory)
 
 // subscriber routes
 router.post('/signup', subscriber.signUp)
-router.post('/subscribe', subscriber.subscribePath)
+router.put('/subscribe/:id', subscriber.subscribePath)
 router.post('/login', subscriber.loginSubscriber)
 router.post('/api/subscriber/product/:id', subscriber.subscriberPostNewProduct)
 router.get('/api/subscriber/:id', subscriber.getSingleSubscriber)

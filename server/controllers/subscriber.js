@@ -13,18 +13,33 @@ exports.subscribePath = async (req, res) => {
             })
         }
         else{
-            const info = await Subscriber.create(req.body)
-            var start = new Date();
-            info.start = start
-            var end = new Date()
-            end.setMonth( end.getMonth() + parseInt(month) );
-            info.end = end
-            info.token = true
-            await info.save()
-            return res.status(201).json({
-                message:'Your subscription was successful',
-                info: info
-            })
+            const info = await Subscriber.findOne({_id: req.params.id })
+            if(!info) {
+                return res.status(404).json({
+                    message: 'User not found'
+                })
+            }
+            else {
+                if(info.token == true) {
+                    return res.status(400).json({
+                        message: 'Oops! you still have a valid subscription.'
+                    })
+                }
+                else {
+                    info.month = month || info.month
+                    var start = new Date();
+                    info.start = start
+                    var end = new Date()
+                    end.setMonth( end.getMonth() + parseInt(month) );
+                    info.end = end
+                    info.token = true
+                    await info.save()
+                    return res.status(201).json({
+                        message:'Your subscription was successful',
+                        info: info
+                    })
+                }
+            }
         }
     } catch (error) {
         return res.status(500).json({
