@@ -6,16 +6,14 @@ const Product = require('../models/product')
 
 exports.subscribePath = async (req, res) => {
     try {
-        const { name, email, phone, password, month } = req.body
-        if(!name || !email || !password || !month){
+        const { month } = req.body
+        if(!month){
             return res.status(403).json({
-                message:'Please fill all inputs'
+                message:'Please select a month'
             })
         }
         else{
-            const hashed = bcrypt.hashSync(password, 10)
             const info = await Subscriber.create(req.body)
-            info.password = hashed
             var start = new Date();
             info.start = start
             var end = new Date()
@@ -25,7 +23,7 @@ exports.subscribePath = async (req, res) => {
             await info.save()
             return res.status(201).json({
                 message:'Your subscription was successful',
-                info:info
+                info: info
             })
         }
     } catch (error) {
