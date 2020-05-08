@@ -1,0 +1,101 @@
+[1204/081455.370:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 5
+[1204/081455.458:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 7
+[1204/081455.640:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 9
+[1204/081455.762:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 11
+[1204/081455.915:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 13
+[1204/081456.316:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 15
+[1204/081456.484:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 19
+[1204/081456.531:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 21
+[1204/081456.859:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 23
+[1204/081456.955:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 25
+[1204/081457.033:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 27
+[1204/081629.941:WARNING:spdy_session.cc(3180)] Received HEADERS for invalid stream 1
+[1204/081645.131:INFO:CONSOLE(176)] "Uncaught TypeError: Cannot read property 'addEventListener' of null", source: file:///C:/Users/Lois/AppData/Local/Eldamar%20Studio%20Software/PerfectSliderMaker/Projects/sellyourmarket/Files/slider_assets/js/index.js (176)
+[1204/090423.854:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.854:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.855:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.855:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.855:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.855:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.856:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.856:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.856:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.856:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.856:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.856:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.857:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.857:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.857:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.857:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.858:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.858:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.858:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.858:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.859:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.859:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.859:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.859:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.859:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.860:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.860:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.860:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.861:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.861:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.861:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.861:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.862:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.862:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.862:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.862:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.862:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.862:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.862:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.862:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.862:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.862:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.862:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.862:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.862:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.862:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.862:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.862:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.866:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.866:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.866:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.866:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.866:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.866:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.866:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.866:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.866:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.866:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.866:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.866:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.866:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.866:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.870:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.870:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.870:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.870:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.870:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.870:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.870:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.870:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.874:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.874:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.874:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.874:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.874:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.874:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.874:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.874:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.874:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.874:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.874:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.874:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.874:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.878:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.878:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.878:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed
+[1204/090423.878:ERROR:broker_win.cc(137)] Error sending sync broker message: The pipe is being closed. (0xE8)
+[1204/090423.878:ERROR:command_buffer_proxy_impl.cc(92)] ContextResult::kFatalFailure: AllocateAndMapSharedMemory failed

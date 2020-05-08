@@ -1,0 +1,901 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  background-color: rgb(22, 21, 21);
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+h5 {
+  margin-top:-10px;
+  font-family: 'Trebuchet MS';
+  color: #5f5d5d;
+}
+
+.contact-content{
+  color: white;
+}
+header{
+  background-color: rgba(255, 255, 255, 0.986);
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+}
+.head>img{
+  height: 90px;
+  margin: 10px;
+  margin-left: 20px;
+}
+.search-container, .log-sign{
+  /* float: right; */
+  margin-top: 40px;
+  display: flex;
+  border-radius: 10px;
+}
+.select{
+  background: #ddd;
+  border: none;
+  width: 90px;
+  padding: 9.5px;
+  float: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.select:focus{
+  border-color: pink;
+}
+.search-container>form>input[type=text]{
+  padding: 6px;
+  border: none;
+  width: 200px;
+  border: 1px solid #ddd;
+  background: transparent;
+  font-size: 17px;
+}
+.search-container>form>input[type=text]:focus{
+  border-color: #333;
+}
+.search-container>form>button{
+  float: right;
+  padding: 7px;
+  margin-right: 16px;
+  background: pink;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.search-container> button:hover{
+  background: #ccc;
+}
+.log-sign{
+  text-align: center;
+  margin-right: 10px;
+}
+.log-sign>a{
+  height: 40px;
+  background-color: pink;
+  border-radius: 5px;
+  padding: 7px;
+  width: 100px;
+}
+@media screen and (min-width:820px){
+  .search-container>form>input[type=text]{
+    padding: 6px;
+    border: none;
+    width: 400px;
+    border: 1px solid #ddd;
+    background: transparent;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:382px){
+  .search-container>form>button{
+    width: 66px;
+  }
+  .select{
+    width: 60px;
+  }
+}
+@media screen and (max-width:622px){
+  .head{
+    text-align: center;
+  }
+  .search-container{
+    float: none;
+    margin: 5px;
+  }
+  .search-container>form>input[type=text]{
+    width: 150px;
+  }
+}
+.nav-bar{
+  background-color: rgba(0, 0, 0, 0.767);
+}
+.navi_menu>a{
+  color: pink;
+}
+@media screen and (min-width: 701px){
+  .nav-bar>ul{
+    display: flex;
+  }
+}
+.nav-bar>ul>li{
+  padding: 20px 50px;
+}
+li,a{
+  list-style: none;
+  text-decoration: none;
+}
+.multi_menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 48;
+}
+.multi_menu>li{
+  list-style: none;
+  margin: 0;
+}
+.multi_menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.multi_menu a:hover {
+  background-color: pink;
+}
+.dropdown:hover .multi_menu {
+  display: block;
+}
+.barse-icon{
+  display: none;
+}
+@media screen and (max-width:999px){
+  .slide-container{
+    height: 350px;
+  }
+  .slides{
+    height: 350px;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the nav_menu look good on small screens */
+@media screen and (max-width: 700px) {
+  .barse-icon{
+    display:block;
+  }
+  .navi_menu{
+    display: none;
+  }
+  .nav_menu.responsive {
+    position: relative;
+    transition: 0.5s;
+  }
+  .nav_menu.responsive li.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .nav_menu.responsive a {
+    float: none;
+    display: block;
+    transition: 0.5s;
+  }
+  /* .nav_menu.responsive.navi_menu{
+    float: none;
+    display: block;
+    transition: 0.5s;
+  } */
+  .nav_menu.responsive.navi_menu a{
+    display: block;
+  }
+  .nav_menu.responsive .multi_menu {position: relative;}
+  .nav_menu.responsive .navi_menu{
+    display: block;
+    width: 100%;
+    float: none;
+    transition: 0.5s;
+    border-bottom: 1px solid grey;
+  }
+    
+}
+.barse-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.barse1, .barse2, .barse3 {
+  width: 35px;
+  height: 5px;
+  background-color: pink;
+  margin: 6px 0;
+  transition: 0.5s;
+}
+/* Rotate first bar */
+.change .barse1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .barse2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .barse3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/* 
+Contact Tab popup styling
+Contact Tab
+Contact Tab
+*/
+.popup{
+  cursor: pointer;
+}
+.contact-overlay{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 55;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.contact-content{
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: pink;
+}
+.contact-overlay>a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0,3s;
+}
+.contact-overlay a:hover, .contact-overlay a:focus{
+  color: #f1f1f1;
+}
+.close-contact{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px !important;
+}
+@media screen and (max-height: 450px){
+  .contact-overlay a{font-size: 450px}
+  .close-contact{
+    font-size: 40px !important;
+    top: 15px;
+    right: 35px;
+  }
+}
+.recent-popular{
+  text-align: center;
+  margin-top: 20px;
+  background-color: pink;
+  text-align: center;
+  padding: 7px;
+}
+.recent-popular>a:hover{
+  text-decoration: underline;
+}
+/* 
+client adverts
+client adverts
+client adverts
+client adverts
+*/
+.advert-newsletter{
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+}
+
+.inner-advert{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.adverts:hover .inner-advert{
+  transform: rotateY(180deg);
+}
+.front-advert, .advert-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.front-advert{
+  background-color: white;
+  color: black;
+  border-radius: 2px;
+}
+.advert-content{
+  transform: rotateY(180deg);
+  background-color: pink;
+  color: black;
+}
+.advert-content>p{
+  text-align: justify;
+}
+.adverts{
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  background-color: transparent;
+  width: 295px;
+  height: 415px;
+  perspective: 1000px;
+}
+.front-advert>img, .front-advert>video{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+.contact-sec{
+  text-align: justify;
+  margin: 10px;
+}
+.contact-sec>p{
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+@media screen and (max-width: 670px){
+  .adverts{
+    width: 90%;
+    margin: 20px;
+  }
+}
+.adverts>img{
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.advert-content{
+  overflow: auto;
+}
+.advert-content>p{
+  margin: 10px;
+  text-align: justify;
+}
+.advert-content>h1{
+  text-align: center;
+  font-family: fantasy;
+}
+footer{
+  background-color: rgb(196, 194, 194);
+  margin-top: 10px;
+  padding: 1px;
+}
+.top-footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.social-icon{
+  display: flex;
+}
+.social-icon>li{
+  margin: 10px;
+}
+.newsletter>form{
+  margin-top: 10px;
+}
+button{
+  border: 0;
+}
+.newsletter{
+  width: 30%;
+}
+.newsletter>form>input[type="email"]{
+  padding: 10px;
+  border: 0;
+  width: 70%;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.newsletter>form>button{
+  padding: 10px;
+  width: 25%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.subscribe{
+  background-color: pink;
+  color: black;
+  padding: 5px;
+}
+.foot{
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+/* 
+frequently asked questions styling FAQs
+*/
+/* Style the buttons that are used to open and close the accordion panel */
+.questions {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  border-bottom: 1px solid pink;
+}
+.answers{
+  color: black;
+}
+
+/* Add a background color to the button if it is clicked on 
+(add the .active class with JS), and when you move the mouse over it (hover) */
+h2>.active, .questions:hover {
+  background-color: #ccc;
+}
+
+/* Style the answer. Note: hidden by default */
+.answer {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+/* The "show" class is added to the accordion panel when the user 
+clicks on one of the buttons. This will show the panel content */
+div.answer.show {
+  display: block !important;
+  opacity: 1;
+  max-height: 500px;
+}
+  /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+
+.questions:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+h2.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* 
+terms and conditions and privacy policy
+*/
+.body{
+  background-color: rgba(255, 255, 255, 0.952);;
+}
+.terms-cond{
+  text-align: center;
+  border-bottom: 3px solid pink;
+}
+.full-info{
+  background-color: white;
+  width: 90%;
+  border: .3px solid rgba(190, 190, 190, 0.514);
+  margin: auto;
+  padding: 10px;
+  text-align: justify;
+}
+.full-info>h2, .full-info>p{
+  margin: 20px;
+}
+.after-head{
+  margin: 10px;
+}
+
+#adminlog{
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  border: 3px solid rgb(233, 233, 233);
+}
+#adminlog>h1{
+  background-color: rgb(233, 233, 233);
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+}
+#adminlog>input, #adminlog>button{
+  margin: 10px;
+  padding: 10px;
+}
+#adminlog>button{
+  width: 100px;
+}
+.admin-dash{
+  background-color: rgb(233, 233, 233);
+}
+.admin-dash>a>img{
+  width: 200px;
+}
+.admin-dash>button{
+  float: right;
+  margin: 10px;
+}
+.manage-post-section{
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.post-head{
+  background-color: pink;
+}
+.manage-list{
+  padding: 10px;
+  width: 200px;
+}
+.manage-list>div{
+  padding: 10px;
+  border: 1px solid pink;
+}
+.manage-list>div>a{
+  text-decoration: none;
+  color: pink;
+}
+/* 
+user dashboard
+styling for
+users views
+*/
+.user-welcome{
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+}
+.user-body{
+  display: flex;
+  margin: 20px;
+  justify-content: space-evenly;
+}
+.user-menu-section{
+  height: 320px;
+}
+.user-menu-section, .user-display-section{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow:  2px 5px 0 rgba(194, 194, 194, 0.411)0 2px 5px 0 rgba(204, 204, 204, 0.548)
+}
+.user-menu-section>div{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.user-menu-section{
+  margin: 10px;
+}
+.user-display-section{
+  width: 75%;
+  margin: 5px;
+}
+@media screen and (max-width:600px){
+  .user-display-section{
+    width: 96%;
+    margin: 5px;
+  }
+}
+.account-overview{
+  padding: 5px;
+}
+.account-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.account-info-sec{
+  width: 40%;
+  margin: 10px;
+}
+.account-info-sec>h3{
+  border: 1px solid rgba(202, 202, 202, 0.596);
+  padding: 5px;
+}
+.account-details, .address-book, .newsletter-preference, .subscription-details{
+  border: 1px solid rgba(202, 202, 202, 0.596);
+  padding: 5px;
+}
+
+/* 
+my adverts
+*/
+.logo-and-info{
+  text-align: center;
+  padding: 10px;
+  margin: 40px;
+}
+.post-advert-container{
+  border-bottom: 1px solid rgb(129, 129, 129);
+}
+.placement-button{
+  background-color: pink;
+  color: black;
+  padding: 10px;
+  width: 70px;
+  border-radius: 3px;
+}
+.when-no-info>img{
+  width: 100px;
+  transform: rotate(9deg);
+}
+.delete-advert-placed{
+  padding: 10px;
+  margin: 2px;
+}
+.advert-image{
+  text-align: center;
+}
+.advert-image>i{
+  font-size: 40px;
+}
+.enter-advert-details{
+  margin-left: 70px;
+}
+.enter-advert-details>p>input{
+  padding: 10px;
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 3px;
+  width: 70%;
+}
+.post-advert-button{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.post-advert{
+  text-align: center;
+  background-color: pink;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 790px){
+  .enter-advert-details{
+    margin-left: 5px;
+  }
+  .enter-advert-details>p>input{
+    width: 100%;
+  }
+  textarea{
+    columns: 40;
+  }
+}
+.status-button{
+  padding: 7px;
+  background-color: hotpink;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+.sub-plan{
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  margin: 20px;
+}
+.border-line{
+  border-bottom: 1px solid rgb(82, 4, 4);
+}
+.plan-link>a{
+  text-decoration: none;
+  color: #333;
+}
+.regular>div, .premium>div, .gold>div{
+  padding-top: 5px;
+}
+.bank-detail{
+  display: flex;
+  justify-content: space-between;
+}
+.option-sub{
+  margin: 20px;
+}
+.pricing{
+  font-size: 20px;
+}
+.payment-option2{
+  padding: 5px;
+  text-align: center;
+}
+/* 
+client adverts
+client adverts
+client adverts
+client adverts
+*/
+.card-link{
+  background-color: white;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  width: 295px;
+}
+.card-link>a>img{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+.card-link>a>{
+  padding: 5px;
+}
+.event-linked{
+  margin: 5px;
+}
+.event-linked>time{
+  color: rgb(212, 55, 81);
+}
+.advert-newsletter{
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+}
+
+.inner-advert{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.adverts:hover .inner-advert{
+  transform: rotateY(180deg);
+}
+.front-advert, .advert-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.front-advert{
+  background-color: white;
+  color: black;
+  border-radius: 2px;
+}
+.advert-content{
+  transform: rotateY(180deg);
+  background-color: pink;
+  color: black;
+}
+.advert-content>p{
+  text-align: justify;
+}
+.adverts{
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px;
+  background-color: transparent;
+  width: 295px;
+  height: 415px;
+  perspective: 1000px;
+}
+.front-advert>img, .front-advert>video{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+.contact-sec{
+  text-align: justify;
+  margin: 10px;
+}
+.contact-sec>p{
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+@media screen and (max-width: 670px){
+  .adverts{
+    width: 90%;
+    margin: 20px;
+  }
+}
+.adverts>img, .card-link>a>img{
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.advert-content{
+  overflow: auto;
+}
+.advert-content>p{
+  margin: 10px;
+  text-align: justify;
+}
+.advert-content>h1{
+  text-align: center;
+  font-family: fantasy;
+}
+.advert-event{
+  background-color: pink;
+  padding: 2px;
+}
+.more{
+  color: white;
+  text-decoration: underline;
+}
+
+.video-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.videos{
+  text-align: center;
+  background-color: white;
+  height: 300px;
+  margin: 10px;
+  padding: 5px;
+  width: 400px;
+}
+
+.post-body{
+  background-color: #ccc;
+}
+.add-to-header>h2, .post-slider>h2, .post-in-card>h2, .post-in-footer>h2{
+  text-align: center;
+  margin-top: 20px;
+}
+.post-card{
+  height: 40px;
+  background-color: pink;
+  border-radius: 5px;
+  padding: 7px;
+  width: 100px;
+}
+.add-category{
+  margin: 20px;
+}
+.add-category>form>input{
+  padding: 8px;
+  width: 300px;
+}
+@media screen and (max-width:600px){
+  .add-category>form>input{
+    width: 78%;
+  } 
+}

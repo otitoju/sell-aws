@@ -8,7 +8,7 @@ const schema = require('./schema/schema')
 const mongoose = require('mongoose')
 const routes = require('./routes/routes')
 const cors = require('cors')
-app.use(cors())
+//app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use('/graphql', graphHTTP({
@@ -17,17 +17,17 @@ app.use('/graphql', graphHTTP({
 }))
 app.use('/', routes)
 // port
-const port = process.env.PORT || 5000
-app.get('/', (req, res) => {
-    res.send(`<h1>Welcome sellyourmarket server</h1>`)
-})
+const port =  9000
+// app.get('/', (req, res) => {
+//     res.send(`<h1>Welcome sellyourmarket server</h1>`)
+// })
 //if (process.env.NODE_ENV === 'production') {
-    // app.use(express.static(path.join(__dirname, '../client/build')));
+    app.use(express.static(path.join(__dirname, '../build')));
     
-    //   // Handle React routing, return all requests to React app
-    // app.get('*', (req, res) => {
-    //     res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-    // })
+      // Handle React routing, return all requests to React app
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, '../build', 'index.html'));
+    })
 //}
 //mongodb://localhost:27017/GraphQLDB
 //mongodb://sellyourmarket:sellyourmarket1@ds263928.mlab.com:63928/sellyourmarket
